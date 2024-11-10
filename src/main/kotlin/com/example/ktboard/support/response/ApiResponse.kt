@@ -1,7 +1,7 @@
 package com.example.ktboard.support.response
 
-import com.example.ktboard.support.error.ErrorMessage
-import com.example.ktboard.support.error.ErrorType
+import com.example.ktboard.domain.error.ErrorMessage
+import com.example.ktboard.domain.error.ErrorType
 
 data class ApiResponse<T> private constructor(
     val result: ResultType,

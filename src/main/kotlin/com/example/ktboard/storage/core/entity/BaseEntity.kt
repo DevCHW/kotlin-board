@@ -1,4 +1,4 @@
-package com.example.ktboard.storage.entity
+package com.example.ktboard.storage.core.entity
 
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType

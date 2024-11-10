@@ -1,4 +1,4 @@
-package com.example.ktboard.support.error
+package com.example.ktboard.domain.error
 
 data class ErrorMessage private constructor(
     val code: String,

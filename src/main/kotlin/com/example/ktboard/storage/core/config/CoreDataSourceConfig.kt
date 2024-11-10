@@ -1,4 +1,4 @@
-package com.example.ktboard.storage.config
+package com.example.ktboard.storage.core.config
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource

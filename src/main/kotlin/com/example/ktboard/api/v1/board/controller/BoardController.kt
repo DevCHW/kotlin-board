@@ -20,4 +20,5 @@ class BoardController(
         val result = boardService.create(request.toModel());
         return ApiResponse.success(result)
     }
+
 }

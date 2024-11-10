@@ -1,7 +1,7 @@
 package com.example.ktboard.api.config
 
-import com.example.ktboard.support.error.CoreException
-import com.example.ktboard.support.error.ErrorType
+import com.example.ktboard.domain.error.CoreException
+import com.example.ktboard.domain.error.ErrorType
 import com.example.ktboard.support.response.ApiResponse
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory

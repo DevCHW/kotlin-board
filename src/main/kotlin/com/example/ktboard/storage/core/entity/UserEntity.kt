@@ -1,12 +1,11 @@
-package com.example.ktboard.storage
+package com.example.ktboard.storage.core.entity
 
-import com.example.ktboard.storage.entity.BaseEntity
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.Table
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 class UserEntity(
 
     @Column(name = "name")

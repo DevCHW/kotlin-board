@@ -1,4 +1,4 @@
-package com.example.ktboard.storage.config
+package com.example.ktboard.storage.core.config
 
 import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.context.annotation.Configuration
