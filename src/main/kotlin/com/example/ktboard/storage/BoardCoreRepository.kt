@@ -1,7 +1,6 @@
 package com.example.ktboard.storage
 
 import com.example.ktboard.domain.board.BoardRepository
-import com.example.ktboard.domain.board.BoardService
 import com.example.ktboard.domain.board.model.Board
 import com.example.ktboard.domain.board.model.CreateBoard
 import com.example.ktboard.domain.board.model.ModifyBoard
@@ -17,7 +16,6 @@ import org.springframework.transaction.annotation.Transactional
 @Transactional
 class BoardCoreRepository(
     val boardEntityJpaRepository: BoardEntityJpaRepository,
-    private val boardService: BoardService
 ) : BoardRepository {
 
     override fun findById(boardId: Long): Board {
