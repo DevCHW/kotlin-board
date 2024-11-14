@@ -13,7 +13,7 @@ abstract class BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long = 0
+    val id: Long = 0L
 
     @CreationTimestamp
     val createdAt: LocalDateTime = LocalDateTime.MIN

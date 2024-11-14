@@ -49,10 +49,11 @@ class BoardCoreRepository(
     }
 
     override fun findByIdOrNull(id: Long): Board? {
-        TODO("Not yet implemented")
+        val boardEntity = boardEntityJpaRepository.findByIdOrNull(id)
+        return boardEntity?.let { Board.of(it) }
     }
 
     override fun delete(id: Long) {
-        TODO("Not yet implemented")
+        boardEntityJpaRepository.deleteById(id)
     }
 }

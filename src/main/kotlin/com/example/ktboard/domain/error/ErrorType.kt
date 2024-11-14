@@ -10,6 +10,7 @@ enum class ErrorType(
     val logLevel: LogLevel,
 ) {
 
+    RESOURCE_NOT_FOUND(HttpStatus.NOT_FOUND, ErrorCode.CODE003, "Not Found", LogLevel.WARN),
     BAD_REQUEST(HttpStatus.BAD_REQUEST, ErrorCode.CODE002, "Bad Request", LogLevel.WARN),
     DEFAULT_SERVER_ERROR(HttpStatus.INTERNAL_SERVER_ERROR,
         ErrorCode.CODE001, "An unexpected error has occurred.", LogLevel.ERROR),
