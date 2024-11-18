@@ -1,9 +1,6 @@
 package com.example.ktboard.storage.core.entity
 
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
-import jakarta.persistence.Id
-import jakarta.persistence.MappedSuperclass
+import jakarta.persistence.*
 import org.hibernate.annotations.CreationTimestamp
 import org.hibernate.annotations.UpdateTimestamp
 import java.time.LocalDateTime
@@ -16,8 +13,10 @@ abstract class BaseEntity {
     val id: Long = 0L
 
     @CreationTimestamp
+    @Column(name = "timestamp_created_at")
     val createdAt: LocalDateTime = LocalDateTime.MIN
 
     @UpdateTimestamp
+    @Column(name = "timestamp_updated_at")
     val updatedAt: LocalDateTime = LocalDateTime.MIN
 }

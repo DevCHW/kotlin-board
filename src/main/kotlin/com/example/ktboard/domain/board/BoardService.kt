@@ -32,4 +32,9 @@ class BoardService(
         return boardRepository.update(modifyBoard)
     }
 
+    @Transactional(readOnly = true)
+    fun getBoards(): List<Board> {
+        return boardRepository.findAll()
+    }
+
 }

@@ -1,4 +1,4 @@
-package com.example.ktboard.api.v1.board.controller.dto.request
+package com.example.ktboard.api.v1.board.application.dto.request
 
 import com.example.ktboard.domain.board.model.CreateBoard
 
@@ -14,4 +14,5 @@ data class CreateBoardRequest private constructor(
             content = this.content,
         )
     }
+
 }

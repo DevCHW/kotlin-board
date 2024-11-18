@@ -1,7 +1,5 @@
-package com.example.ktboard.api.v1.board.controller.dto.request
+package com.example.ktboard.api.v1.board.application.dto.request
 
-import com.example.ktboard.api.v1.board.controller.dto.response.BoardResponse
-import com.example.ktboard.domain.board.model.Board
 import com.example.ktboard.domain.board.model.ModifyBoard
 
 data class ModifyBoardRequest(

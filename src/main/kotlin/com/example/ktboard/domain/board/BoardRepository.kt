@@ -14,4 +14,6 @@ interface BoardRepository {
     fun findByIdOrNull(id: Long): Board?
 
     fun delete(id: Long)
+
+    fun findAll(): List<Board>
 }

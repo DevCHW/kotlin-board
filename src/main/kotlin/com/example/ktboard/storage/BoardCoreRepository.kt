@@ -56,4 +56,9 @@ class BoardCoreRepository(
     override fun delete(id: Long) {
         boardEntityJpaRepository.deleteById(id)
     }
+
+    override fun findAll(): List<Board> {
+        val boardEntities = boardEntityJpaRepository.findAll()
+        return boardEntities.map { Board.of(it) }
+    }
 }

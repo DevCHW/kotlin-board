@@ -1,5 +1,6 @@
 package com.example.ktboard.domain.board.model
 
+import com.example.ktboard.domain.error.CoreException
 import com.example.ktboard.storage.core.entity.BoardEntity
 import java.time.LocalDateTime
 
@@ -20,5 +21,22 @@ data class Board(
                 updatedAt = boardEntity.updatedAt,
             )
         }
+
+        fun testObject(
+            id: Long = 1L,
+            title: String = "게시글 제목",
+            content: String = "게시글 내용",
+            createdAt: LocalDateTime = LocalDateTime.now(),
+            updatedAt: LocalDateTime = LocalDateTime.now(),
+        ): Board {
+            return Board(
+                id = id,
+                title = title,
+                content = content,
+                createdAt = createdAt,
+                updatedAt = updatedAt,
+            )
+        }
     }
+
 }

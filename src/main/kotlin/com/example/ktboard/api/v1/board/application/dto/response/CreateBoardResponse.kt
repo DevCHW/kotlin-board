@@ -1,4 +1,4 @@
-package com.example.ktboard.api.v1.board.controller.dto.response
+package com.example.ktboard.api.v1.board.application.dto.response
 
 import com.example.ktboard.domain.board.model.Board
 import java.time.LocalDateTime
@@ -10,7 +10,6 @@ data class CreateBoardResponse(
     val createdAt: LocalDateTime,
     val updatedAt: LocalDateTime,
 ) {
-
     companion object {
         fun from(board: Board): CreateBoardResponse {
             return CreateBoardResponse(
